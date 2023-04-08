@@ -6,57 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Huella de Carbono</title>
     <link rel="shorcut icon" href="../favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/estilos.css">
+     <!--Boostrap antes del link de css-->
+     <link href="../css/bootstrap.min.css" rel="stylesheet">
+     <!--Boostrap antes del link de css-->
+    <link rel="stylesheet" href="../scss/estilos.css">
+    <script src="https://kit.fontawesome.com/afeef0875f.js" crossorigin="anonymous"></script>
 </head>
 <body>
      <!-------------------------HEADER------------------------>
-     <header class="altoHeader colorPrincipal header_sticky" >  <!-- etiquetas semanticas de estructura -->
+     <header class="altoHeader colorPrincipal header_sticky">  <!-- etiquetas semanticas de estructura -->
         <!-------------------------div principal del logo----------------------->
             <div> 
             <img class="logo" src="../assets/img/CRA logo dorado.png " alt="logo CRA" >
          </div>   
-    <nav> <!-- etiquetas de navegacion -->  
-        <section>
-        <ul class="listaNavegacion"> <!--listas desordenadas para AGRUPAR las anclas para agrupar las listas items -->  
+        <nav> <!-- etiquetas de navegacion -->  
+        <section class="NavSection">
+             <ul class="NavSection_ul"> <!--listas desordenadas para AGRUPAR las anclas para agrupar las listas items -->  
          <!--Hay 2 tipos de rutas absolutas o relativas -->     
             <li>
-                <a class="linkNav" href="../index.html">Inicio</a>
+                <a class="Nav_linkNav" href="../index.html">Inicio</a>
             </li>
             <li>
-                <a class="linkNav" href="nuevasTec.html">Nuevas Tecnologías</a>
+                <a class="Nav_linkNav" href="nuevasTec.html">Nuevas Tecnologías</a>
             </li>
             <li>
-                <a class="linkNav" href="#">Huella de Carbono</a>
+                <a class="Nav_linkNav" href="#">Huella de Carbono</a>
             </li>
             <li>
-                <a class="linkNav" href="economia.html">Economía Circular</a>
+                <a class="Nav_linkNav" href="economia.html">Economía Circular</a>
             </li>
             <li>
-                <a class="linkNav" href="quienes.html">Quienes somos</a>
+                <a class="Nav_linkNav" href="quienes.html">Quienes somos</a>
             </li>
     </ul>
-</section>
+  </section>
     </nav>
         </header>
     <main>
+        <br>
+        <br>
         <h1>La Huella de Carbono</h1>
-        <div>
-            <img src="../assets/img/HuellaCarbono.png" alt="La Huella de Carbono">
+        <br>
+        <div class="container">
+            <img class="huella" src="../assets/img/QueEsLaHuellaDeCarbono800x300.jpg" alt="La Huella de Carbono">
         </div>
+
         <p>
+            <br>
             <h5>Como reducir las emisiones, contribuyendo al planeta.</h5>
         </p>
+        <div>
+            <p class="textoHuella">
+                <br>
+                La Huella de Carbono (HC) es un instrumento que permite estimar las emisiones de <br>
+                gases efecto invernadero (GEI) emitidos por un individuo, organización, evento o <br>
+                producto (UK Carbon Trust). El cálculo consiste en recopilar los datos referentes a los <br>
+                consumos directos e indirectos de insumos materiales y energía, <br>
+                y traducirlos en emisiones de C02  equivalentes; <br>
+                universalmente se eligió el CO2 como valor de referencia <br>
+                 para poder comparar con los otros GEI, ya que es el gas que más <br>
+                crecimiento ha experimentado en la atmósfera terrestre y el más abundante <br>
+                porcentaje de todos ellos. <br>
+
+                La huella de carbono es una métrica ambiental que calcula la cantidad de emisiones  <br>
+                de gases de efecto invernadero que emitimos a la atmósfera. <br>
+                Esta métrica es utilizada por las empresas para medir su impacto <br>
+                sobre el medio ambiente y establecer estrategias para reducirlo. <br>
+                <br>
+                <br>
+            </p>
+        </div>
 
     </main>
 
     <footer class="colorPrincipal altoHeader img"> <!-- etiquetas semanticas de estructura con un css -->
-        <div> 
-            <!--<img class="size" src="./assets/img/instagram.png" alt="Instagram">  -->
-    <a href="https://www.instagram.com/monica_barreiro_2021/" target="_blank"> Instagram</a>
-    <a href="https://www.facebook.com/monica.barreiro.564/"target="_blank"> Facebook</a>
-    <a href="https://web.whatsapp.com/"target="_blank"> whatsapp</a>
-</div>
+      <!--<div class contenedorRedes" alt="Instagram">  -->
+    <div class="contenedorRedes">
+        <a href="https://www.instagram.com/monica_barreiro_2021/" target="_blank"> 
+            <i class="fa-brands fa-instagram"></i></a>
+          <!--facebook de fontawesome">  -->
+            <a href="https://www.facebook.com/monica.barreiro.564/"target="_blank">
+                <i class="fa-brands fa-square-facebook"></i></a>
+                  <!--whatsapp de fontawesome">  -->
+                <a href="https://web.whatsapp.com/"target="_blank"> 
+                    <i class="fa-brands fa-whatsapp"></i></a></div>
+        </div>  <!--final del div de contenedorRedes">  -->
      </footer>
-      <!---------------------------------------BODY---------------------------------> 
+      <!-------------------Link de js de Boostrap bien abajo pegado al fin del Body desp del footer-----------------> 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+      crossorigin="anonymous"></script>
+       <!---------------------------------------Fin del BODY---------------------------------> 
+    
     </body>
 </html>

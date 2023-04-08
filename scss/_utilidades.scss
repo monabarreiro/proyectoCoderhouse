@@ -1,0 +1,52 @@
+
+p{
+    color:$color-blanco;
+    text-align:$text-align-center;/*variable para alinear texto*/
+ }
+ 
+ .fotos_container {          /* de la parte de quienes somos*/
+    display: flex;
+    width:auto;
+    height: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* para centrar en el eje horizontal porque es un row*/
+    align-items: center;  /* para centrar en el eje contrario*/
+    object-fit: cover;
+ } 
+ 
+ .alicia{
+     width: 190px; 
+     height: 25vh;
+    
+ }
+ .monica{
+     width: 190px;
+     height: 25vh;
+ }
+ 
+ h6{
+ 
+     color:$color-blanco;
+     text-align: center;
+     margin-bottom: center ;
+     padding-bottom: center;
+    
+ 
+ }
+ .parrafoQuienes{
+ 
+     display: flex;
+     padding-top: 150px;
+     width: auto;
+     flex-direction: row;
+     align-content: center;
+     justify-content:center; /* para centrar en el eje horizontal porque es un row*/
+     align-items:end;  /* para centrar en el eje contrario*/
+  
+   
+ }
+ .margin{
+     margin-left: 50px;
+ }
+ 

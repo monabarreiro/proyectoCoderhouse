@@ -1,0 +1,155 @@
+
+.altoHeader{
+    height:6 rem ;
+ }
+ .colorPrincipal{
+     background-color: $colorback;   /* cree una variable para background-color  */
+ 
+ }
+
+ .logo{
+     margin: 15px;
+     padding: 10;
+     height: 8rem; 
+ }
+
+/* .header_sticky{
+    position:$position-sticky;
+    margin-bottom: 10px;
+    padding: 10px;
+    top: 0px;
+    z-index: 10; /* queda por encima de todo  }
+
+ 
+.header{
+
+   .header.altoHeader.colorPrincipal.header_sticky{
+    position:$position-sticky;
+    margin-bottom: 10px;
+   
+   
+
+   
+/*
+    .Nav_link{  
+        text-decoration: none;
+        font-size: medium;
+        color: $color-blanco; /*variable de color de los textos*/
+      
+    /* todo esto es correcto y funciona bien a partir de aca*/   
+ 
+   
+   
+.NavSection{
+    display:flex;
+    justify-content: end;
+    position: bottom;
+    text-decoration: none;
+    position:$position-sticky;
+
+    .NavSection_ul{
+     text-decoration: none;
+     padding: 10px 10px 10px 5px;
+     display:flex-end;
+     justify-content: end;
+     display:inline-flex; 
+     list-style: none;
+    
+
+     .Nav_linkNav{
+       
+        text-decoration: none;
+        color:$color-blanco;
+        padding: 10px 10px 10px 5px;
+        flex-direction: row;   
+        
+}
+
+}
+
+}
+
+li{
+    float: left;
+    list-style-type: none; 
+    justify-content: end;
+    text-decoration: none;
+
+     }
+    li a:hover{   /* APLICACION DE HOVER  */
+     display: block;
+     padding: 10px 10px 10px 5px;
+    text-decoration: none;
+    font-size: small;
+    color: $color-blanco;
+
+    }
+
+
+/*<section class="NavSection">
+             <ul class="NavSection_ul"> <!--listas desordenadas para AGRUPAR las anclas para agrupar las listas items -->  
+         <!--Hay 2 tipos de rutas absolutas o relativas -->     
+            <li>
+                <a class="Nav_linkNav" */
+
+
+ @media screen and (min-width:0) and (max-width: 768px){
+   .header.altoHeader.colorPrincipal.header_sticky{
+        Nav{          /*anidaciones*/
+
+        .Nav_listaNavegacion{   /* para correr la lista navegacion a la derecha */
+            display:flex;
+            justify-content: end;
+             
+        .Nav_linkNav{       
+        
+        text-decoration: none;
+        font-size: small;
+        color: $color-blanco; /*variable de color de los textos*/
+    
+        li{
+           
+            float: center;
+            list-style-type: none; 
+          
+            li a:hover{   /* APLICACION DE HOVER VER DE NUEVO */
+                display: inline-block;
+                padding: 10px 10px 10px 5px;
+                text-decoration: none;
+                font-size: small;
+                color: $color-blanco;
+                
+                }
+        }
+       
+
+  }
+ }
+}
+}
+}
+  
+  
+    
+        
+
+    
+   
+
+
+
+   
+    
+    
+    
+    
+        
+    
+
+   
+    
+
+
+
+
+

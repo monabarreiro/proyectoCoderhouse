@@ -1,0 +1,218 @@
+/* selectores  3 las mas importantes  
+selector de etiqueta:
+1.- Selector de la etiqueta de html Ej: header { propiedad valor } (selector poco
+especifico)
+2.-Selector de clase : se llama con el . 
+3.-Selector de id : se llama con # (es unico para base de datos y backend 
+el id es como el numero de DNI
+4.- Selector universal le aplica a todas las etiquetas: *{
+5.- Palabra reservada important !important; (no mas de 5 x css)
+ */
+
+
+/* Ser ordenados: 1ero el body, 2do, el header, 3 el main, 4 el footer{
+}*/
+
+/* header{
+    background-color: black;
+}*/
+
+/* estilados del Header y footer */
+
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.altoHeader{
+   height:10rem ;
+}
+.colorPrincipal{
+    background-color: black;
+}
+.logo{
+    margin: 5px;
+    padding: 0;
+    height: 4rem; 
+}
+.header_sticky{
+    position:sticky;
+    margin-bottom: 10px;
+    padding: 10px;
+    top: 0px;
+    z-index: 10; /* queda por encima de todo */
+
+}
+li{
+   
+    float: left;
+    list-style-type: none; 
+    
+}
+li a{
+display: block;
+padding: 10px 10px 10px 5px;
+
+}
+.listaNavegacion{   /* para correr la lista navegacion a la derecha */
+    display:flex;
+    justify-content: end;
+   
+ 
+}
+.linkNav{
+
+   text-decoration: none;
+    font-size: medium;
+    color: blanchedalmond;
+   
+
+}
+.textoCentrado{
+    text-align: center;
+    color:blanchedalmond;
+
+}
+main{
+    background-image: url("../assets/img/manotech.jpeg");
+    size: 100vh;
+ 
+}
+/* Main del index*/
+
+/*.imagenesPrincipales{
+   align-items: center;
+} */
+.box{
+   width: 50%;  /* px unidades de medida absolutas */
+   height: 200px;
+}
+.padre{
+
+    display:flex;
+    width:auto;
+    height: 100vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* para centrar en el eje horizontal porque es un row*/
+    align-items: center;  /* para centrar en el eje contrario*/
+} 
+
+
+.imagen{
+    margin: 0 auto;  /* para centrar en la pagina LAS IMAGENES  */
+
+}
+
+.imagenIndex{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.centrado{
+    text-align: center;
+   
+
+}
+h1{
+    margin:0 auto;
+    color: antiquewhite;  
+    text-align: center; 
+}
+
+h2{
+    margin: 0 auto;
+    color:antiquewhite;
+    text-align:center;
+}
+h3{
+    color:antiquewhite;
+    text-align: center;
+    
+}
+h4{
+    color:antiquewhite;
+    text-align: center;
+}
+
+
+h5{
+   color: antiquewhite;     
+   text-align: center;
+}
+
+h6{
+
+    color: antiquewhite;
+    text-align: center;
+    margin-bottom: center ;
+    padding-bottom: center;
+   
+
+}
+p{
+   color:antiquewhite;
+   text-align:center; 
+}
+
+.fotos_container {
+display: flex;
+width:auto;
+height: 30px;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-evenly; /* para centrar en el eje horizontal porque es un row*/
+align-items: center;  /* para centrar en el eje contrario*/
+object-fit: cover;
+} 
+
+.alicia{
+    width: 190px; 
+    height: 25vh;
+   
+}
+.monica{
+    width: 190px;
+    height: 25vh;
+}
+.parrafoQuienes{
+
+    display: flex;
+    padding-top: 150px;
+    width: auto;
+    flex-direction: row;
+    align-content: center;
+    justify-content:center; /* para centrar en el eje horizontal porque es un row*/
+    align-items:end;  /* para centrar en el eje contrario*/
+ 
+  
+}
+.margin{
+    margin-left: 50px;
+}
+/*footer */
+.contenedorRedes{
+display: flex;
+justify-content: space-around;
+
+
+}
+.contenedorRedes a{
+color:antiquewhite;
+font-size: 30px;
+text-decoration: none;
+}
+
+
+.huella{
+ display: flex;
+ text-align:center;
+ justify-content:center;
+ width: 900px;
+ height: 500px;
+ margin-inline: 200px;
+
+}

@@ -1,0 +1,54 @@
+
+h1{
+    margin:0 auto;
+    color:$color-blanco;  /* Variables de color blanco para los textos  */
+    text-align: center; 
+}
+
+h1.Economia{  /* PARA COLOCAR UNA ANIMACION EN ESTE TITULO CON HOVER */
+    animation-name:  animate__rotateIn;
+    margin:0 auto;
+    color:$color-blanco;  /* Variables de color blanco para los textos  */
+    text-align: center; 
+
+}
+h1.Economia a:hover{
+   
+   color: aquamarine;
+   text-decoration: double;
+   font-size:larger;
+ 
+
+  
+
+
+}
+h2{
+    margin: 0 auto;
+    color:$color-blanco; /* Variables de color blanco para los textos  */
+    text-align:$text-align-center;  /*variable para alinear texto*/
+}
+h3{
+    color:$color-blanco;  /* Variables de color blanco para los textos  */
+    text-align: $text-align-center;
+    
+}
+h4{
+    color:$color-blanco;
+    text-align: $text-align-center;/*variable para alinear texto*/
+}
+
+
+h5{
+   color:$color-blanco;     
+   text-align: $text-align-center;/*variable para alinear texto*/
+  }
+
+h6{
+
+    color:$color-blanco;
+    text-align: $text-align-center;/*variable para alinear texto*/
+    margin-bottom: center ;
+    padding-bottom: center;
+   
+}

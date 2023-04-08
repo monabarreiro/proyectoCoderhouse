@@ -6,59 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuevas Tecnologías </title>
     <link rel="shorcut icon" href="../favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/estilos.css">
+     <!--Boostrap antes del link de css-->
+     <link href="../css/bootstrap.min.css" rel="stylesheet">
+     <!--Boostrap antes del link de css-->
+    <link rel="stylesheet" href="../scss/estilos.css">
+    <script src="https://kit.fontawesome.com/afeef0875f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-------------------------HEADER------------------------>
-    <header class="altoHeader colorPrincipal header_sticky" >  <!-- etiquetas semanticas de estructura -->
+    <header class="altoHeader colorPrincipal header_sticky">  <!-- etiquetas semanticas de estructura -->
         <!-------------------------div principal del logo----------------------->
             <div> 
             <img class="logo" src="../assets/img/CRA logo dorado.png " alt="logo CRA" >
          </div>   
-    <nav> <!-- etiquetas de navegacion -->  
-        <section>
-        <ul class="listaNavegacion"> <!--listas desordenadas para AGRUPAR las anclas para agrupar las listas items -->  
+        <nav> <!-- etiquetas de navegacion -->  
+        <section class="NavSection">
+             <ul class="NavSection_ul"> <!--listas desordenadas para AGRUPAR las anclas para agrupar las listas items -->  
          <!--Hay 2 tipos de rutas absolutas o relativas -->     
             <li>
-                <a class="linkNav" href="../index.html">Inicio</a>
+                <a class="Nav_linkNav" href="../index.html">Inicio</a>
             </li>
             <li>
-                <a class="linkNav" href="#">Nuevas Tecnologías</a>
+                <a class="Nav_linkNav" href="#">Nuevas Tecnologías</a>
             </li>
             <li>
-                <a class="linkNav" href="huella.html">Huella de Carbono</a>
+                <a class="Nav_linkNav" href="huella.html">Huella de Carbono</a>
             </li>
             <li>
-                <a class="linkNav" href="economia.html">Economía Circular</a>
+                <a class="Nav_linkNav" href="economia.html">Economía Circular</a>
             </li>
             <li>
-                <a class="linkNav" href="quienes.html">Quienes somos</a>
+                <a class="Nav_linkNav" href="quienes.html">Quienes somos</a>
             </li>
     </ul>
-</section>
+  </section>
     </nav>
         </header>
     <main>
+        <br>
+        <br>
         <h1>Nuevas Tecnologías en el Agro</h1>
     <!-- aqui va lo principal h1, imagenes, etc-->
-    <img src="" alt="">
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aperiam esse consequatur nemo? Optio facilis non asperiores tempora repellat quo, tempore atque. Quo, quam suscipit blanditiis velit ducimus nisi ad!</p>
-    <section>
-        <h2>Video de Tecnologías</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/DX0f8vskgOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <img  src="" alt="">
+    <section class="container-fluid d-lg-grid">  <!--ver esta clase como LA CAMBIO -->
+    <p>Desde que se inventó el celular e internet, la tecnología irrumpió en el Agro <br>
+    de una manera fenomenal. El acceso a la información, los satélites, las aplicaciones <br>
+     le dan a los productores herramientas de control y acceso a los éxitos de vecinos <br>
+     que permiten menos errores y mayor ahorro de insumos. <br>
+     <br>
+    Hoy en día los drones, la robótica, la señal satelital posibilita no sólo controlar los campos <br>
+     y ganado sino  que además posibilita visualizar los ambientes más fertiles y con menos <br>
+     necesidades de fertilizantes frente a otros que para igualar el rendimiento de los primeros, <br>
+     deberemos fertilizar mucho más. <br>
+     <br>
+     <br>
+    </p>
+</section>
+<section class="centrado">
+       
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DX0f8vskgOQ" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+         allowfullscreen></iframe>
+
+         <br>
+         <br>
     </section>
 
 
 </main>
 
 <footer class="colorPrincipal altoHeader img"> <!-- etiquetas semanticas de estructura con un css -->
-    <div> 
-        <!--<img class="size" src="./assets/img/instagram.png" alt="Instagram">  -->
-<a href="https://www.instagram.com/monica_barreiro_2021/" target="_blank"> Instagram</a>
-<a href="https://www.facebook.com/monica.barreiro.564/"target="_blank"> Facebook</a>
-<a href="https://web.whatsapp.com/"target="_blank"> whatsapp</a>
-</div>
+   <!--<div class contenedorRedes" alt="Instagram">  -->
+    <div class="contenedorRedes">
+        <a href="https://www.instagram.com/monica_barreiro_2021/" target="_blank"> 
+            <i class="fa-brands fa-instagram"></i></a>
+          <!--facebook de fontawesome">  -->
+            <a href="https://www.facebook.com/monica.barreiro.564/"target="_blank">
+                <i class="fa-brands fa-square-facebook"></i></a>
+                  <!--whatsapp de fontawesome">  -->
+                <a href="https://web.whatsapp.com/"target="_blank"> 
+                    <i class="fa-brands fa-whatsapp"></i></a></div>
+        </div>  <!--final del div de contenedorRedes">  -->
  </footer>
-  <!---------------------------------------BODY---------------------------------> 
+  <!-------------------Link de js de Boostrap bien abajo pegado al fin del Body desp del footer-----------------> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+  crossorigin="anonymous"></script>
+   <!---------------------------------------Fin del BODY---------------------------------> 
+  
 </body>
 </html>

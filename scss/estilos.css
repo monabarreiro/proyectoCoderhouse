@@ -1,0 +1,300 @@
+/*cree una variable para la tipog*/
+/* aca tiene que ir un mapa*/
+/* aca tiene que ir un mixin por lo menos  */
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; /*cree una variable para la tipog*/
+}
+
+p {
+  color: blanchedalmond;
+  text-align: center; /*variable para alinear texto*/
+}
+
+.fotos_container { /* de la parte de quienes somos*/
+  display: flex;
+  width: auto;
+  height: 30px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* para centrar en el eje horizontal porque es un row*/
+  align-items: center; /* para centrar en el eje contrario*/
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.alicia {
+  width: 190px;
+  height: 25vh;
+}
+
+.monica {
+  width: 190px;
+  height: 25vh;
+}
+
+h6 {
+  color: blanchedalmond;
+  text-align: center;
+  margin-bottom: center;
+  padding-bottom: center;
+}
+
+.parrafoQuienes {
+  display: flex;
+  padding-top: 150px;
+  width: auto;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center; /* para centrar en el eje horizontal porque es un row*/
+  align-items: end; /* para centrar en el eje contrario*/
+}
+
+.margin {
+  margin-left: 50px;
+}
+
+/* aca tiene que ir variables varias */
+.altoHeader {
+  height: 6 rem;
+}
+
+.colorPrincipal {
+  background-color: rgb(10, 10, 10); /* cree una variable para background-color  */
+}
+
+.logo {
+  margin: 15px;
+  padding: 10;
+  height: 8rem;
+}
+
+/* .header_sticky{
+    position:$position-sticky;
+    margin-bottom: 10px;
+    padding: 10px;
+    top: 0px;
+    z-index: 10; /* queda por encima de todo  }
+
+
+.header{
+
+   .header.altoHeader.colorPrincipal.header_sticky{
+    position:$position-sticky;
+    margin-bottom: 10px;
+
+
+
+
+/*
+    .Nav_link{  
+        text-decoration: none;
+        font-size: medium;
+        color: $color-blanco; /*variable de color de los textos*/
+/* todo esto es correcto y funciona bien a partir de aca*/
+.NavSection {
+  display: flex;
+  justify-content: end;
+  position: bottom;
+  text-decoration: none;
+  position: sticky;
+}
+.NavSection .NavSection_ul {
+  text-decoration: none;
+  padding: 10px 10px 10px 5px;
+  display: flex-end;
+  justify-content: end;
+  display: inline-flex;
+  list-style: none;
+}
+.NavSection .NavSection_ul .Nav_linkNav {
+  text-decoration: none;
+  color: blanchedalmond;
+  padding: 10px 10px 10px 5px;
+  flex-direction: row;
+}
+
+li {
+  float: left;
+  list-style-type: none;
+  justify-content: end;
+  text-decoration: none;
+}
+
+li a:hover { /* APLICACION DE HOVER  */
+  display: block;
+  padding: 10px 10px 10px 5px;
+  text-decoration: none;
+  font-size: small;
+  color: blanchedalmond;
+}
+
+/*<section class="NavSection">
+             <ul class="NavSection_ul"> <!--listas desordenadas para AGRUPAR las anclas para agrupar las listas items -->  
+         <!--Hay 2 tipos de rutas absolutas o relativas -->     
+            <li>
+                <a class="Nav_linkNav" */
+@media screen and (min-width: 0) and (max-width: 768px) {
+  .header.altoHeader.colorPrincipal.header_sticky Nav { /*anidaciones*/ }
+  .header.altoHeader.colorPrincipal.header_sticky Nav .Nav_listaNavegacion { /* para correr la lista navegacion a la derecha */
+    display: flex;
+    justify-content: end;
+  }
+  .header.altoHeader.colorPrincipal.header_sticky Nav .Nav_listaNavegacion .Nav_linkNav {
+    text-decoration: none;
+    font-size: small;
+    color: blanchedalmond; /*variable de color de los textos*/
+  }
+  .header.altoHeader.colorPrincipal.header_sticky Nav .Nav_listaNavegacion .Nav_linkNav li {
+    float: center;
+    list-style-type: none;
+  }
+  .header.altoHeader.colorPrincipal.header_sticky Nav .Nav_listaNavegacion .Nav_linkNav li li a:hover { /* APLICACION DE HOVER VER DE NUEVO */
+    display: inline-block;
+    padding: 10px 10px 10px 5px;
+    text-decoration: none;
+    font-size: small;
+    color: blanchedalmond;
+  }
+}
+.textoCentrado {
+  text-align: center; /*variable para alinear texto*/
+  color: blanchedalmond;
+}
+
+main {
+  background-image: url("../assets/img/manotech.jpeg");
+  size: 100vh;
+}
+
+/* Main del index*/
+/*.imagenesPrincipales{
+   align-items: center;
+} */
+.imagenEconomia { /*Agrego una animacion a la imagen de Economia*/
+  transition: 10s;
+  transform: rotateZ(180deg);
+}
+
+.imagenEconomia :hover {
+  will-change: scroll-position;
+}
+
+.box {
+  width: 50%; /* px unidades de medida absolutas */
+  height: 200px;
+}
+
+.padre {
+  display: flex;
+  width: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* para centrar en el eje horizontal porque es un row*/
+  align-items: center; /* para centrar en el eje contrario*/
+}
+
+.imagen {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto; /* para centrar en la pagina LAS IMAGENES  */
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.imagenIndex {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*
+/*.imagenIndex a:hover{
+    transform: escale(1.2);
+}
+*/
+.centrado {
+  text-align: center; /*variable para alinear texto*/
+}
+
+h1 {
+  margin: 0 auto;
+  color: blanchedalmond; /* Variables de color blanco para los textos  */
+  text-align: center;
+}
+
+h1.Economia { /* PARA COLOCAR UNA ANIMACION EN ESTE TITULO CON HOVER */
+  animation-name: animate__rotateIn;
+  margin: 0 auto;
+  color: blanchedalmond; /* Variables de color blanco para los textos  */
+  text-align: center;
+}
+
+h1.Economia a:hover {
+  color: aquamarine;
+  -webkit-text-decoration: double;
+          text-decoration: double;
+  font-size: larger;
+}
+
+h2 {
+  margin: 0 auto;
+  color: blanchedalmond; /* Variables de color blanco para los textos  */
+  text-align: center; /*variable para alinear texto*/
+}
+
+h3 {
+  color: blanchedalmond; /* Variables de color blanco para los textos  */
+  text-align: center;
+}
+
+h4 {
+  color: blanchedalmond;
+  text-align: center; /*variable para alinear texto*/
+}
+
+h5 {
+  color: blanchedalmond;
+  text-align: center; /*variable para alinear texto*/
+}
+
+h6 {
+  color: blanchedalmond;
+  text-align: center; /*variable para alinear texto*/
+  margin-bottom: center;
+  padding-bottom: center;
+}
+
+.huella {
+  display: flex-end;
+  text-align: center;
+  justify-content: center;
+  width: 900px;
+  height: 500px;
+  margin-inline: 200px;
+}
+
+/*footer */
+.contenedorRedes {
+  display: flex;
+  margin-top: 0%;
+  padding-bottom: 3%;
+  justify-content: space-around;
+  justify-content: space-evenly; /* para centrar en el eje horizontal porque es un row*/
+  align-items: center; /* para centrar en el eje contrario*/
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-inline: 5px;
+  margin-bottom: 0%;
+  /* ver si se juntan las redes*/
+}
+
+.contenedorRedes a {
+  color: blanchedalmond;
+  font-size: 30px;
+  text-decoration: none;
+}/*# sourceMappingURL=estilos.css.map */

@@ -6,60 +6,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiénes Somos</title>
     <link rel="shorcut icon" href="../favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/estilos.css">
+    
+     <!--Boostrap antes del link de css-->
+     <link href="../css/bootstrap.min.css" rel="stylesheet">
+     <!--Boostrap antes del link de css-->
+    <link rel="stylesheet" href="../scss/estilos.css">
+    <script src="https://kit.fontawesome.com/afeef0875f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-------------------------HEADER------------------------>
-    <header class="altoHeader colorPrincipal header_sticky" >  <!-- etiquetas semanticas de estructura -->
-        <!-------------------------div principal del logo----------------------->
-            <div> 
-            <img class="logo" src="../assets/img/CRA logo dorado.png " alt="logo CRA" >
-         </div>   
-    <nav> <!-- etiquetas de navegacion -->  
-        <section>
-        <ul class="listaNavegacion"> <!--listas desordenadas para AGRUPAR las anclas para agrupar las listas items -->  
-         <!--Hay 2 tipos de rutas absolutas o relativas -->     
-            <li>
-                <a class="linkNav" href="../index.html">Inicio</a>
-            </li>
-            <li>
-                <a class="linkNav" href="nuevasTec.html">Nuevas Tecnologías</a>
-            </li>
-            <li>
-                <a class="linkNav" href="huella.html">Huella de Carbono</a>
-            </li>
-            <li>
-                <a class="linkNav" href="economia.html">Economía Circular</a>
-            </li>
-            <li>
-                <a class="linkNav" href="#">Quienes somos</a>
-            </li>
-    </ul>
+    <header class="altoHeader colorPrincipal header_sticky">  <!-- etiquetas semanticas de estructura -->
+      <!-------------------------div principal del logo----------------------->
+          <div> 
+          <img class="logo" src="../assets/img/CRA logo dorado.png " alt="logo CRA" >
+       </div>   
+      <nav> <!-- etiquetas de navegacion -->  
+      <section class="NavSection">
+           <ul class="NavSection_ul"> <!--listas desordenadas para AGRUPAR las anclas para agrupar las listas items -->  
+       <!--Hay 2 tipos de rutas absolutas o relativas -->     
+          <li>
+              <a class="Nav_linkNav" href="../index.html">Inicio</a>
+          </li>
+          <li>
+              <a class="Nav_linkNav" href="nuevasTec.html">Nuevas Tecnologías</a>
+          </li>
+          <li>
+              <a class="Nav_linkNav" href="huella.html">Huella de Carbono</a>
+          </li>
+          <li>
+              <a class="Nav_linkNav" href="economia.html">Economía Circular</a>
+          </li>
+          <li>
+              <a class="Nav_linkNav" href="#">Quienes somos</a>
+          </li>
+  </ul>
 </section>
-    </nav>
-        </header>
+  </nav>
+      </header>
     <main>
         <section>
-        <h2>Quiénes somos</h2>
+            <br>
+            <br>
+        <h3 class="container">Quiénes somos</h3>
 
-        <div class="fotos">  <!--Div Padre de los divs hijos que contienen fotos-->
-    <div> <!--Div 1 Hijo que contienen fotos-->
-        <img src="../assets/img/Alicia Padilla.jpg" alt="Alicia Padilla">
-        <h3>Alicia Padilla</h3>
+        <div class="fotos_container">  <!--Div Padre de los divs hijos que contienen fotos-->
+    
+            <div class="row"> <!--Div del row para alinear fotos -->
+            <div class="imagen col-4 border-2"> <!--Div 1 Hijo que contienen fotos-->
+        <img class="alicia" src="../assets/img/Alicia Padilla.jpg" alt="Alicia Padilla">
+        <h6>Alicia Padilla</h6>
      </div>
-    <div><!--Div 1 Hijo que contienen fotos-->
-        <img src="../assets/img/Monica Barreiro .jpg" alt="Mónica Barreiro">
-        <h3>Mónica Barreiro</h3>
-    </div>
+    <div class="imagen col-4 border-2"><!--Div 1 Hijo que contienen fotos-->
+        <img class="monica" src="../assets/img/Monica Barreiro .jpg" alt="Mónica Barreiro">
+        <h6>Mónica Barreiro</h6>
+    </div> <!--cierre div de imagenes  -->
+</div><!--Div del row -->
         </div> <!--Div Padre de cierre -->
-
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum eos soluta, voluptatem ullam nobis quidem tempora facilis ad aspernatur natus exercitationem maxime cupiditate recusandae vitae illo saepe eaque? Commodi, iste.</p>
         </section>
+        
         <section>
-            <h4>Podes dejarnos tu consulta en el siguiente formulario</h4>
+          <br>
+          <br>
+
+        <div class="container-fluid">
+        <div class="parrafoQuienes">   <!--Ver estilo de ParrafoQuienes -->
+            
+             <p>Alicia Padilla y Mónica Barreiro son dos profesionales que trabajan complementándose <br>
+               desde hace 30 años. Padilla es un talento en Difusión de Prensa, manejo de Medios e Imagen Pública. <br>
+                 Trajo a Gorbachov y a William Ury, el creador del libro "La Negociación", <br>
+                  a la Argentina, entre muchos otros.
+                 Mónica Barreiro ha realizado innumerables estudios en profundidad <br>
+                 para el Agro para las más importantes empresas del país: <br>
+                 como Dekalb,Monsanto, Dow, Corteva, UPL, Yara, Rizobacter, entre otros. <br>
+                 Juntas hacen una sinergia muy especial con sus talentos. <br>
+                 <br>
+                 <br>
+                 
+             </p>
+           </div>
+         </div>
+         
+       
+     </section>
+        
+  
+    
+        <section class="margin">
+            <h4>Podés dejarnos tu consulta en el siguiente formulario</h4>
             <div>
-            <form action="">  <!--es a donde se envia el formulario-->
-                <div>
+            <form action="404.html">  <!--es a donde se envia el formulario-->
+
+                <!--este formulario es de boostrap-->
+                <form class="row g-3 ">
+                    <div class="col-md-6">
+                      <label for="inputText" class="form-label text-white"> Nombre y Apellido</label>
+                      <input type="nombre y apellido" class="form-control" id="NombreyApellido" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputAddress" class="form-label text-white">email</label>
+                      <input type="email" class="form-control" id="email" required> 
+                    </div>
+                    <div class="col-lg-6">
+                      <label for="inputAddress" class="form-label text-white">Dirección</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="Av.Callao 500" required>
+                    </div>
+                    <div class="col-lg-6">
+                      <label for="inputTelefono" class="form-label text-white">Celular</label>
+                      <input type="text" class="form-control" id="inputAddress2" placeholder="+5491149300909" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputCity" class="form-label text-white">Ciudad</label>
+                      <input type="text" class="form-control" id="Ciudad" required>
+                    </div>
+                    
+                    <div class="col-md-2">
+                      <label for="inputZip" class="form-label text-white">Código postal</label>
+                      <input type="text" class="form-control" id="inputZip"required>
+                    </div>
+                    <div class="col-lg-6">
+                      <input type="submit" class="btn btn-primary text-white">Enviar</input>
+                    </div>
+                  </form>
+
+                <!--aqui termina el formulario de boostrap -->
+               <!-- <div> -- este es el formulario que hice yo rudimentario para la primera entrega
                     <label for="nombre"> Nombre</label>
                     <input type="text" placeholder="Escriba su nombre " required>
                     <label for="apellido">Apellido</label>
@@ -79,16 +149,16 @@
                     <div>
                         <input type="submit"value="Enviar Formulario">
                         <input type="reset" value="Limpiar formulario">
-                    </div>
+                    </div> -->
                   
                         
                  
     
 
-            </form>
+          <!-- </form> -->
         </div>
         </section>
-        <section>
+        <section class="centrado">
             <h3>Donde estamos</h3>
              <!-------------------------Mapas insertados------------------------>
              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6511550.855737943!2d-65.839577!3d-37.165343!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95dc6d0da46936e9%3A0xac1677be5ff258c8!2sLa%20Pampa!5e0!3m2!1sen!2sar!4v1676934209166!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -98,13 +168,23 @@
     </main>
 
     <footer class="colorPrincipal altoHeader img"> <!-- etiquetas semanticas de estructura con un css -->
-        <div> 
-            <!--<img class="size" src="./assets/img/instagram.png" alt="Instagram">  -->
-    <a href="https://www.instagram.com/monica_barreiro_2021/" target="_blank"> Instagram</a>
-    <a href="https://www.facebook.com/monica.barreiro.564/"target="_blank"> Facebook</a>
-    <a href="https://web.whatsapp.com/"target="_blank"> whatsapp</a>
-</div>
+        <!--<div class contenedorRedes" alt="Instagram">  -->
+    <div class="contenedorRedes">
+      <a href="https://www.instagram.com/monica_barreiro_2021/" target="_blank"> 
+          <i class="fa-brands fa-instagram"></i></a>
+        <!--facebook de fontawesome">  -->
+          <a href="https://www.facebook.com/monica.barreiro.564/"target="_blank">
+              <i class="fa-brands fa-square-facebook"></i></a>
+                <!--whatsapp de fontawesome">  -->
+              <a href="https://web.whatsapp.com/"target="_blank"> 
+                  <i class="fa-brands fa-whatsapp"></i></a></div>
+      </div>  <!--final del div de contenedorRedes">  -->
      </footer>
+      <!-------------------Link de js de Boostrap bien abajo pegado al fin del Body desp del footer-----------------> 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+      crossorigin="anonymous"></script>
+       <!---------------------------------------Fin del BODY---------------------------------> 
       <!---------------------------------------BODY---------------------------------> 
     </body>
 </html>

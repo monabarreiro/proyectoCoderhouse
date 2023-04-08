@@ -1,0 +1,24 @@
+
+/*footer */
+
+
+.contenedorRedes{
+    display:flex;
+    margin-top: 0%;
+    padding-bottom: 3%;
+    justify-content: space-around;
+    justify-content: space-evenly; /* para centrar en el eje horizontal porque es un row*/
+    align-items: center;  /* para centrar en el eje contrario*/
+    object-fit: cover;
+    padding-inline: 5px; 
+    margin-bottom: 0%;
+    /* ver si se juntan las redes*/
+ 
+    }
+    
+    .contenedorRedes a{
+    color:$color-blanco;
+    font-size: 30px;
+    text-decoration: none;
+    }
+    

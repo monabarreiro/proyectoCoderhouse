@@ -6,53 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Economía Circular</title>
     <link rel="shorcut icon" href="../favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/estilos.css">
+     <!--Boostrap antes del link de css-->
+     <link href="../css/bootstrap.min.css" rel="stylesheet">
+     <!--Boostrap antes del link de css-->
+    <link rel="stylesheet" href="../scss/estilos.css">
+    <script src="https://kit.fontawesome.com/afeef0875f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-------------------------HEADER------------------------>
-    <header class="altoHeader colorPrincipal header_sticky" >  <!-- etiquetas semanticas de estructura -->
+    <header class="altoHeader colorPrincipal header_sticky">  <!-- etiquetas semanticas de estructura -->
         <!-------------------------div principal del logo----------------------->
             <div> 
             <img class="logo" src="../assets/img/CRA logo dorado.png " alt="logo CRA" >
          </div>   
-    <nav> <!-- etiquetas de navegacion -->  
-        <section>
-        <ul class="listaNavegacion"> <!--listas desordenadas para AGRUPAR las anclas para agrupar las listas items -->  
+        <nav> <!-- etiquetas de navegacion -->  
+        <section class="NavSection">
+             <ul class="NavSection_ul"> <!--listas desordenadas para AGRUPAR las anclas para agrupar las listas items -->  
          <!--Hay 2 tipos de rutas absolutas o relativas -->     
             <li>
-                <a class="linkNav" href="../index.html">Inicio</a>
+                <a class="Nav_linkNav" href="../index.html">Inicio</a>
             </li>
             <li>
-                <a class="linkNav" href="nuevasTec.html">Nuevas Tecnologías</a>
+                <a class="Nav_linkNav" href="nuevasTec.html">Nuevas Tecnologías</a>
             </li>
             <li>
-                <a class="linkNav" href="huella.html">Huella de Carbono</a>
+                <a class="Nav_linkNav" href="huella.html">Huella de Carbono</a>
             </li>
             <li>
-                <a class="linkNav" href="#">Economía Circular</a>
+                <a class="Nav_linkNav" href="#">Economía Circular</a>
             </li>
             <li>
-                <a class="linkNav" href="quienes.html">Quienes somos</a>
+                <a class="Nav_linkNav" href="quienes.html">Quienes somos</a>
             </li>
     </ul>
-</section>
+  </section>
     </nav>
         </header>
     <main>
-<h1>Economía Circular</h1>
+        <br>
+        <br>
+<h1 class="Economia">Economía Circular</h1>
 <p>
-    <img src="../assets/img/circular2.png" alt="economía circular">
+    <br>
+    <br>
+    <div class="centrado">
+    <img src="../assets/img/circular2.png" alt="economía circular" class="imagenEconomia">
+</div>
 </p>
+<div>
+    <h4 Class=>Que es la Economía Circular</h4>
+    <br>
+    <br>
+    <p>
+        
+La economía circular es un modelo de producción y consumo que implica compartir,<br>
+ alquilar, reutilizar, reparar, renovar y reciclar materiales y productos <br>
+existentes todas las veces que sea posible para crear un valor añadido. <br>
+De esta forma, el ciclo de vida de los productos se extiende. <br>
+<br>
+
+En la práctica, implica reducir los residuos al mínimo. <br>
+Cuando un producto llega al final de su vida, sus materiales se mantienen <br>
+dentro de la economía siempre que sea posible gracias al reciclaje. <br>
+Estos pueden ser productivamente utilizados una y otra vez, creando así un valor. <br>
+<br>
+Contrasta con el modelo económico lineal tradicional,<br>
+ basado principalmente en el concepto “usar y tirar”, <br>
+  que requiere de grandes cantidades de materiales y <br>
+  energía baratos y de fácil acceso. <br>
+ <br>
+ <br>
+    </p>
+</div>
     </main>
 
     <footer class="colorPrincipal altoHeader img"> <!-- etiquetas semanticas de estructura con un css -->
-        <div> 
-            <!--<img class="size" src="./assets/img/instagram.png" alt="Instagram">  -->
-    <a href="https://www.instagram.com/monica_barreiro_2021/" target="_blank"> Instagram</a>
-    <a href="https://www.facebook.com/monica.barreiro.564/"target="_blank"> Facebook</a>
-    <a href="https://web.whatsapp.com/"target="_blank"> whatsapp</a>
-</div>
+        <!--<div class contenedorRedes" alt="Instagram">  -->
+    <div class="contenedorRedes">
+        <a href="https://www.instagram.com/monica_barreiro_2021/" target="_blank"> 
+            <i class="fa-brands fa-instagram"></i></a>
+          <!--facebook de fontawesome">  -->
+            <a href="https://www.facebook.com/monica.barreiro.564/"target="_blank">
+                <i class="fa-brands fa-square-facebook"></i></a>
+                  <!--whatsapp de fontawesome">  -->
+                <a href="https://web.whatsapp.com/"target="_blank"> 
+                    <i class="fa-brands fa-whatsapp"></i></a></div>
+        </div>  <!--final del div de contenedorRedes">  -->
      </footer>
-      <!---------------------------------------BODY---------------------------------> 
+      <!-------------------Link de Js de Boostrap bien abajo pegado al fin del Body desp del footer-----------------> 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+      crossorigin="anonymous"></script>
+       <!---------------------------------------Fin del BODY---------------------------------> 
+      
     </body>
 </html>
